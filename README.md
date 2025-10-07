@@ -1,0 +1,2 @@
+# A7_ICAPE2
+使用xilinx的ICAP接口读取和修改FPGA配置存储器内的数据，芯片型号为A7_35T
