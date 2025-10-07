@@ -1,0 +1,64 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Thu Jun 12 12:52:34 2025
+# Process ID: 3652
+# Current directory: D:/Vivado_project/ICAPE2/write_reg_5/vivado_pj/write_reg
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent20860 D:\Vivado_project\ICAPE2\write_reg_5\vivado_pj\write_reg\write_reg.xpr
+# Log file: D:/Vivado_project/ICAPE2/write_reg_5/vivado_pj/write_reg/vivado.log
+# Journal file: D:/Vivado_project/ICAPE2/write_reg_5/vivado_pj/write_reg\vivado.jou
+# Running On: LAPTOP-LPVALG78, OS: Windows, CPU Frequency: 2419 MHz, CPU Physical cores: 16, Host memory: 34124 MB
+#-----------------------------------------------------------
+start_gui
+open_project D:/Vivado_project/ICAPE2/write_reg_5/vivado_pj/write_reg/write_reg.xpr
+update_compile_order -fileset sources_1
+open_run synth_1 -name synth_1
+close_design
+open_run impl_1
+close_design
+create_ip -name ila -vendor xilinx.com -library ip -version 6.2 -module_name ila_0
+set_property -dict [list \
+  CONFIG.C_NUM_OF_PROBES {5} \
+  CONFIG.C_PROBE1_WIDTH {32} \
+  CONFIG.C_PROBE3_WIDTH {7} \
+  CONFIG.C_PROBE4_WIDTH {32} \
+] [get_ips ila_0]
+generate_target {instantiation_template} [get_files d:/Vivado_project/ICAPE2/write_reg_5/vivado_pj/write_reg/write_reg.srcs/sources_1/ip/ila_0/ila_0.xci]
+generate_target all [get_files  d:/Vivado_project/ICAPE2/write_reg_5/vivado_pj/write_reg/write_reg.srcs/sources_1/ip/ila_0/ila_0.xci]
+catch { config_ip_cache -export [get_ips -all ila_0] }
+export_ip_user_files -of_objects [get_files d:/Vivado_project/ICAPE2/write_reg_5/vivado_pj/write_reg/write_reg.srcs/sources_1/ip/ila_0/ila_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] d:/Vivado_project/ICAPE2/write_reg_5/vivado_pj/write_reg/write_reg.srcs/sources_1/ip/ila_0/ila_0.xci]
+launch_runs ila_0_synth_1 -jobs 24
+wait_on_run ila_0_synth_1
+export_simulation -of_objects [get_files d:/Vivado_project/ICAPE2/write_reg_5/vivado_pj/write_reg/write_reg.srcs/sources_1/ip/ila_0/ila_0.xci] -directory D:/Vivado_project/ICAPE2/write_reg_5/vivado_pj/write_reg/write_reg.ip_user_files/sim_scripts -ip_user_files_dir D:/Vivado_project/ICAPE2/write_reg_5/vivado_pj/write_reg/write_reg.ip_user_files -ipstatic_source_dir D:/Vivado_project/ICAPE2/write_reg_5/vivado_pj/write_reg/write_reg.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Vivado_project/ICAPE2/write_reg_5/vivado_pj/write_reg/write_reg.cache/compile_simlib/modelsim} {questa=D:/Vivado_project/ICAPE2/write_reg_5/vivado_pj/write_reg/write_reg.cache/compile_simlib/questa} {riviera=D:/Vivado_project/ICAPE2/write_reg_5/vivado_pj/write_reg/write_reg.cache/compile_simlib/riviera} {activehdl=D:/Vivado_project/ICAPE2/write_reg_5/vivado_pj/write_reg/write_reg.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs synth_1 -jobs 24
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 24
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {D:/Vivado_project/ICAPE2/write_reg_5/vivado_pj/write_reg/write_reg.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+set_property PROBES.FILE {D:/Vivado_project/ICAPE2/write_reg_5/vivado_pj/write_reg/write_reg.runs/impl_1/top.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {D:/Vivado_project/ICAPE2/write_reg_5/vivado_pj/write_reg/write_reg.runs/impl_1/top.ltx} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {D:/Vivado_project/ICAPE2/write_reg_5/vivado_pj/write_reg/write_reg.runs/impl_1/top.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {D:/Vivado_project/ICAPE2/write_reg_5/vivado_pj/write_reg/write_reg.runs/impl_1/top.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/Vivado_project/ICAPE2/write_reg_5/vivado_pj/write_reg/write_reg.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"write_reg_top_inst/write_reg/ila_0_inst"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"write_reg_top_inst/write_reg/ila_0_inst"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"write_reg_top_inst/write_reg/ila_0_inst"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"write_reg_top_inst/write_reg/ila_0_inst"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'b1 [get_hw_probes write_reg_top_inst/write_reg/start -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"write_reg_top_inst/write_reg/ila_0_inst"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"write_reg_top_inst/write_reg/ila_0_inst"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"write_reg_top_inst/write_reg/ila_0_inst"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"write_reg_top_inst/write_reg/ila_0_inst"}]]
+save_wave_config {D:/Vivado_project/ICAPE2/write_reg_5/vivado_pj/write_reg/write_reg.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+close_hw_manager
+open_run impl_1

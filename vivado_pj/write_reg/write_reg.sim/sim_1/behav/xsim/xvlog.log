@@ -1,0 +1,8 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado_project/ICAPE2/write_reg_5/rtl/addr_generater.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module addr_generater
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado_project/ICAPE2/write_reg_5/rtl/write_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module write_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado_project/ICAPE2/write_reg_5/rtl/write_reg_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module write_reg_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado_project/ICAPE2/write_reg_5/sim/write_reg_top_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module write_reg_top_tb

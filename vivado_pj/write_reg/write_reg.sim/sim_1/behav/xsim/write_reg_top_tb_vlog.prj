@@ -1,0 +1,12 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../../../rtl/addr_generater.v" \
+"../../../../../../rtl/write_reg.v" \
+"../../../../../../rtl/write_reg_top.v" \
+"../../../../../../sim/write_reg_top_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

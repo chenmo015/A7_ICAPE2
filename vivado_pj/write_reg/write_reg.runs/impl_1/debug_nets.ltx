@@ -1,0 +1,1650 @@
+{
+    "ltx_root": {
+        "version": 4,
+        "minor": 0,
+        "ltx_data": [
+            {
+                "name": "EDA_PROBESET",
+                "active": true,
+                "debug_cores": [
+                    {
+                        "type": "XSDB_V3",
+                        "name": "dbg_hub",
+                        "spec": "labtools_xsdbm_v3"
+                    },
+                    {
+                        "type": "ILA_V3",
+                        "name": "write_reg_top_inst/write_reg/ila_0_inst",
+                        "spec": "labtools_ila_v6",
+                        "ipName": "ila",
+                        "core_location": {
+                            "user_chain": 1,
+                            "slave_index": 0,
+                            "bscan_switch_index": 0
+                        },
+                        "uuid": "290EC3136EAB5FEAB21E655FA9FA5B67",
+                        "pins": [
+                            {
+                                "name": "probe0",
+                                "id": 0,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 0,
+                                "nets": [
+                                    {
+                                        "name": "write_reg_top_inst/write_reg/start",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe1",
+                                "id": 1,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 31,
+                                "portIndex": 1,
+                                "nets": [
+                                    {
+                                        "name": "write_reg_top_inst/write_reg/frameaddr",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "write_reg_top_inst/write_reg/frameaddr[31]"
+                                            },
+                                            {
+                                                "name": "write_reg_top_inst/write_reg/frameaddr[30]"
+                                            },
+                                            {
+                                                "name": "write_reg_top_inst/write_reg/frameaddr[29]"
+                                            },
+                                            {
+                                                "name": "write_reg_top_inst/write_reg/frameaddr[28]"
+                                            },
+                                            {
+                                                "name": "write_reg_top_inst/write_reg/frameaddr[27]"
+                                            },
+                                            {
+                                                "name": "write_reg_top_inst/write_reg/frameaddr[26]"
+                                            },
+                                            {
+                                                "name": "write_reg_top_inst/write_reg/frameaddr[25]"
+                                            },
+                                            {
+                                                "name": "write_reg_top_inst/write_reg/frameaddr[24]"
+                                            },
+                                            {
+                                                "name": "write_reg_top_inst/write_reg/frameaddr[23]"
+                                            },
+                                            {
+                                                "name": "write_reg_top_inst/write_reg/frameaddr[22]"
+                                            },
+                                            {
+                                                "name": "write_reg_top_inst/write_reg/frameaddr[21]"
+                                            },
+                                            {
+                                                "name": "write_reg_top_inst/write_reg/frameaddr[20]"
+                                            },
+                                            {
+                                                "name": "write_reg_top_inst/write_reg/frameaddr[19]"
+                                            },
+                                            {
+                                                "name": "write_reg_top_inst/write_reg/frameaddr[18]"
+                                            },
+                                            {
+                                                "name": "write_reg_top_inst/write_reg/frameaddr[17]"
+                                            },
+                                            {
+                                                "name": "write_reg_top_inst/write_reg/frameaddr[16]"
+                                            },
+                                            {
+                                                "name": "write_reg_top_inst/write_reg/frameaddr[15]"
+                                            },
+                                            {
+                                                "name": "write_reg_top_inst/write_reg/frameaddr[14]"
+                                            },
+                                            {
+                                                "name": "write_reg_top_inst/write_reg/frameaddr[13]"
+                                            },
+                                            {
+                                                "name": "write_reg_top_inst/write_reg/frameaddr[12]"
+                                            },
+                                            {
+                                                "name": "write_reg_top_inst/write_reg/frameaddr[11]"
+                                            },
+                                            {
+                                                "name": "write_reg_top_inst/write_reg/frameaddr[10]"
+                                            },
+                                            {
+                                                "name": "write_reg_top_inst/write_reg/frameaddr[9]"
+                                            },
+                                            {
+                                                "name": "write_reg_top_inst/write_reg/frameaddr[8]"
+                                            },
+                                            {
+                                                "name": "write_reg_top_inst/write_reg/frameaddr[7]"
+                                            },
+                                            {
+                                                "name": "write_reg_top_inst/write_reg/frameaddr[6]"
+                                            },
+                                            {
+                                                "name": "write_reg_top_inst/write_reg/frameaddr[5]"
+                                            },
+                                            {
+                                                "name": "write_reg_top_inst/write_reg/frameaddr[4]"
+                                            },
+                                            {
+                                                "name": "write_reg_top_inst/write_reg/frameaddr[3]"
+                                            },
+                                            {
+                                                "name": "write_reg_top_inst/write_reg/frameaddr[2]"
+                                            },
+                                            {
+                                                "name": "write_reg_top_inst/write_reg/frameaddr[1]"
+                                            },
+                                            {
+                                                "name": "write_reg_top_inst/write_reg/frameaddr[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe2",
+                                "id": 2,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 2,
+                                "nets": [
+                                    {
+                                        "name": "write_reg_top_inst/write_reg/flag_addr_cnt",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe3",
+                                "id": 3,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 6,
+                                "portIndex": 3,
+                                "nets": [
+                                    {
+                                        "name": "write_reg_top_inst/write_reg/state",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "write_reg_top_inst/write_reg/state[6]",
+                                                "parentNetId": 34
+                                            },
+                                            {
+                                                "name": "write_reg_top_inst/write_reg/state[5]",
+                                                "parentNetId": 35
+                                            },
+                                            {
+                                                "name": "write_reg_top_inst/write_reg/state[4]",
+                                                "parentNetId": 36
+                                            },
+                                            {
+                                                "name": "write_reg_top_inst/write_reg/state[3]",
+                                                "parentNetId": 37
+                                            },
+                                            {
+                                                "name": "write_reg_top_inst/write_reg/state[2]",
+                                                "parentNetId": 38
+                                            },
+                                            {
+                                                "name": "write_reg_top_inst/write_reg/state[1]",
+                                                "parentNetId": 39
+                                            },
+                                            {
+                                                "name": "write_reg_top_inst/write_reg/state[0]",
+                                                "parentNetId": 40
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe4",
+                                "id": 4,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 31,
+                                "portIndex": 4,
+                                "nets": [
+                                    {
+                                        "name": "write_reg_top_inst/write_reg/icap_i_real",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "write_reg_top_inst/write_reg/icap_i_real[31]"
+                                            },
+                                            {
+                                                "name": "write_reg_top_inst/write_reg/icap_i_real[30]"
+                                            },
+                                            {
+                                                "name": "write_reg_top_inst/write_reg/icap_i_real[29]"
+                                            },
+                                            {
+                                                "name": "write_reg_top_inst/write_reg/icap_i_real[28]"
+                                            },
+                                            {
+                                                "name": "write_reg_top_inst/write_reg/icap_i_real[27]"
+                                            },
+                                            {
+                                                "name": "write_reg_top_inst/write_reg/icap_i_real[26]"
+                                            },
+                                            {
+                                                "name": "write_reg_top_inst/write_reg/icap_i_real[25]"
+                                            },
+                                            {
+                                                "name": "write_reg_top_inst/write_reg/icap_i_real[24]"
+                                            },
+                                            {
+                                                "name": "write_reg_top_inst/write_reg/icap_i_real[23]"
+                                            },
+                                            {
+                                                "name": "write_reg_top_inst/write_reg/icap_i_real[22]"
+                                            },
+                                            {
+                                                "name": "write_reg_top_inst/write_reg/icap_i_real[21]"
+                                            },
+                                            {
+                                                "name": "write_reg_top_inst/write_reg/icap_i_real[20]"
+                                            },
+                                            {
+                                                "name": "write_reg_top_inst/write_reg/icap_i_real[19]"
+                                            },
+                                            {
+                                                "name": "write_reg_top_inst/write_reg/icap_i_real[18]"
+                                            },
+                                            {
+                                                "name": "write_reg_top_inst/write_reg/icap_i_real[17]"
+                                            },
+                                            {
+                                                "name": "write_reg_top_inst/write_reg/icap_i_real[16]"
+                                            },
+                                            {
+                                                "name": "write_reg_top_inst/write_reg/icap_i_real[15]"
+                                            },
+                                            {
+                                                "name": "write_reg_top_inst/write_reg/icap_i_real[14]"
+                                            },
+                                            {
+                                                "name": "write_reg_top_inst/write_reg/icap_i_real[13]"
+                                            },
+                                            {
+                                                "name": "write_reg_top_inst/write_reg/icap_i_real[12]"
+                                            },
+                                            {
+                                                "name": "write_reg_top_inst/write_reg/icap_i_real[11]"
+                                            },
+                                            {
+                                                "name": "write_reg_top_inst/write_reg/icap_i_real[10]"
+                                            },
+                                            {
+                                                "name": "write_reg_top_inst/write_reg/icap_i_real[9]"
+                                            },
+                                            {
+                                                "name": "write_reg_top_inst/write_reg/icap_i_real[8]"
+                                            },
+                                            {
+                                                "name": "write_reg_top_inst/write_reg/icap_i_real[7]"
+                                            },
+                                            {
+                                                "name": "write_reg_top_inst/write_reg/icap_i_real[6]"
+                                            },
+                                            {
+                                                "name": "write_reg_top_inst/write_reg/icap_i_real[5]"
+                                            },
+                                            {
+                                                "name": "write_reg_top_inst/write_reg/icap_i_real[4]"
+                                            },
+                                            {
+                                                "name": "write_reg_top_inst/write_reg/icap_i_real[3]"
+                                            },
+                                            {
+                                                "name": "write_reg_top_inst/write_reg/icap_i_real[2]"
+                                            },
+                                            {
+                                                "name": "write_reg_top_inst/write_reg/icap_i_real[1]"
+                                            },
+                                            {
+                                                "name": "write_reg_top_inst/write_reg/icap_i_real[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "parent_nets": [
+                    {
+                        "id": 34,
+                        "name": "write_reg_top_inst/write_reg/state[6]",
+                        "state_reg": [
+                            {
+                                "name": "write_reg_top_inst/write_reg/state_reg[6]",
+                                "states": [
+                                    {
+                                        "name": "STATE00",
+                                        "val": "0000000"
+                                    },
+                                    {
+                                        "name": "STATE01",
+                                        "val": "0000001"
+                                    },
+                                    {
+                                        "name": "STATE02",
+                                        "val": "0000010"
+                                    },
+                                    {
+                                        "name": "STATE03",
+                                        "val": "0000011"
+                                    },
+                                    {
+                                        "name": "STATE04",
+                                        "val": "0000100"
+                                    },
+                                    {
+                                        "name": "STATE05",
+                                        "val": "0000101"
+                                    },
+                                    {
+                                        "name": "STATE06",
+                                        "val": "0000110"
+                                    },
+                                    {
+                                        "name": "STATE07",
+                                        "val": "0000111"
+                                    },
+                                    {
+                                        "name": "STATE08",
+                                        "val": "0001000"
+                                    },
+                                    {
+                                        "name": "STATE09",
+                                        "val": "0001001"
+                                    },
+                                    {
+                                        "name": "STATE10",
+                                        "val": "0001010"
+                                    },
+                                    {
+                                        "name": "STATE11",
+                                        "val": "0001011"
+                                    },
+                                    {
+                                        "name": "STATE12",
+                                        "val": "0001100"
+                                    },
+                                    {
+                                        "name": "STATE13",
+                                        "val": "0001101"
+                                    },
+                                    {
+                                        "name": "STATE14",
+                                        "val": "0001110"
+                                    },
+                                    {
+                                        "name": "STATE15",
+                                        "val": "0001111"
+                                    },
+                                    {
+                                        "name": "STATE16",
+                                        "val": "0010000"
+                                    },
+                                    {
+                                        "name": "STATE17",
+                                        "val": "0010001"
+                                    },
+                                    {
+                                        "name": "STATE18",
+                                        "val": "0010010"
+                                    },
+                                    {
+                                        "name": "STATE19",
+                                        "val": "0010011"
+                                    },
+                                    {
+                                        "name": "STATE20",
+                                        "val": "0010100"
+                                    },
+                                    {
+                                        "name": "STATE21",
+                                        "val": "0010101"
+                                    },
+                                    {
+                                        "name": "STATE22",
+                                        "val": "0010110"
+                                    },
+                                    {
+                                        "name": "STATE23",
+                                        "val": "0010111"
+                                    },
+                                    {
+                                        "name": "STATE24",
+                                        "val": "0011000"
+                                    },
+                                    {
+                                        "name": "STATE25",
+                                        "val": "0011001"
+                                    },
+                                    {
+                                        "name": "STATE26",
+                                        "val": "0011010"
+                                    },
+                                    {
+                                        "name": "STATE27",
+                                        "val": "0011011"
+                                    },
+                                    {
+                                        "name": "STATE28",
+                                        "val": "0011100"
+                                    },
+                                    {
+                                        "name": "STATE29",
+                                        "val": "0011101"
+                                    },
+                                    {
+                                        "name": "STATE30",
+                                        "val": "0011110"
+                                    },
+                                    {
+                                        "name": "STATE31",
+                                        "val": "0011111"
+                                    },
+                                    {
+                                        "name": "STATE32",
+                                        "val": "0100000"
+                                    },
+                                    {
+                                        "name": "STATE33",
+                                        "val": "0100001"
+                                    },
+                                    {
+                                        "name": "STATE34",
+                                        "val": "0100010"
+                                    },
+                                    {
+                                        "name": "STATE35",
+                                        "val": "0100011"
+                                    },
+                                    {
+                                        "name": "STATE36",
+                                        "val": "0100100"
+                                    },
+                                    {
+                                        "name": "STATE37",
+                                        "val": "0100101"
+                                    },
+                                    {
+                                        "name": "STATE38",
+                                        "val": "0100110"
+                                    },
+                                    {
+                                        "name": "STATE39",
+                                        "val": "0100111"
+                                    },
+                                    {
+                                        "name": "STATE40",
+                                        "val": "0101000"
+                                    },
+                                    {
+                                        "name": "STATE41",
+                                        "val": "0101001"
+                                    },
+                                    {
+                                        "name": "STATE42",
+                                        "val": "0101010"
+                                    },
+                                    {
+                                        "name": "STATE43",
+                                        "val": "0101011"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": 35,
+                        "name": "write_reg_top_inst/write_reg/state[5]",
+                        "state_reg": [
+                            {
+                                "name": "write_reg_top_inst/write_reg/state_reg[5]",
+                                "states": [
+                                    {
+                                        "name": "STATE00",
+                                        "val": "0000000"
+                                    },
+                                    {
+                                        "name": "STATE01",
+                                        "val": "0000001"
+                                    },
+                                    {
+                                        "name": "STATE02",
+                                        "val": "0000010"
+                                    },
+                                    {
+                                        "name": "STATE03",
+                                        "val": "0000011"
+                                    },
+                                    {
+                                        "name": "STATE04",
+                                        "val": "0000100"
+                                    },
+                                    {
+                                        "name": "STATE05",
+                                        "val": "0000101"
+                                    },
+                                    {
+                                        "name": "STATE06",
+                                        "val": "0000110"
+                                    },
+                                    {
+                                        "name": "STATE07",
+                                        "val": "0000111"
+                                    },
+                                    {
+                                        "name": "STATE08",
+                                        "val": "0001000"
+                                    },
+                                    {
+                                        "name": "STATE09",
+                                        "val": "0001001"
+                                    },
+                                    {
+                                        "name": "STATE10",
+                                        "val": "0001010"
+                                    },
+                                    {
+                                        "name": "STATE11",
+                                        "val": "0001011"
+                                    },
+                                    {
+                                        "name": "STATE12",
+                                        "val": "0001100"
+                                    },
+                                    {
+                                        "name": "STATE13",
+                                        "val": "0001101"
+                                    },
+                                    {
+                                        "name": "STATE14",
+                                        "val": "0001110"
+                                    },
+                                    {
+                                        "name": "STATE15",
+                                        "val": "0001111"
+                                    },
+                                    {
+                                        "name": "STATE16",
+                                        "val": "0010000"
+                                    },
+                                    {
+                                        "name": "STATE17",
+                                        "val": "0010001"
+                                    },
+                                    {
+                                        "name": "STATE18",
+                                        "val": "0010010"
+                                    },
+                                    {
+                                        "name": "STATE19",
+                                        "val": "0010011"
+                                    },
+                                    {
+                                        "name": "STATE20",
+                                        "val": "0010100"
+                                    },
+                                    {
+                                        "name": "STATE21",
+                                        "val": "0010101"
+                                    },
+                                    {
+                                        "name": "STATE22",
+                                        "val": "0010110"
+                                    },
+                                    {
+                                        "name": "STATE23",
+                                        "val": "0010111"
+                                    },
+                                    {
+                                        "name": "STATE24",
+                                        "val": "0011000"
+                                    },
+                                    {
+                                        "name": "STATE25",
+                                        "val": "0011001"
+                                    },
+                                    {
+                                        "name": "STATE26",
+                                        "val": "0011010"
+                                    },
+                                    {
+                                        "name": "STATE27",
+                                        "val": "0011011"
+                                    },
+                                    {
+                                        "name": "STATE28",
+                                        "val": "0011100"
+                                    },
+                                    {
+                                        "name": "STATE29",
+                                        "val": "0011101"
+                                    },
+                                    {
+                                        "name": "STATE30",
+                                        "val": "0011110"
+                                    },
+                                    {
+                                        "name": "STATE31",
+                                        "val": "0011111"
+                                    },
+                                    {
+                                        "name": "STATE32",
+                                        "val": "0100000"
+                                    },
+                                    {
+                                        "name": "STATE33",
+                                        "val": "0100001"
+                                    },
+                                    {
+                                        "name": "STATE34",
+                                        "val": "0100010"
+                                    },
+                                    {
+                                        "name": "STATE35",
+                                        "val": "0100011"
+                                    },
+                                    {
+                                        "name": "STATE36",
+                                        "val": "0100100"
+                                    },
+                                    {
+                                        "name": "STATE37",
+                                        "val": "0100101"
+                                    },
+                                    {
+                                        "name": "STATE38",
+                                        "val": "0100110"
+                                    },
+                                    {
+                                        "name": "STATE39",
+                                        "val": "0100111"
+                                    },
+                                    {
+                                        "name": "STATE40",
+                                        "val": "0101000"
+                                    },
+                                    {
+                                        "name": "STATE41",
+                                        "val": "0101001"
+                                    },
+                                    {
+                                        "name": "STATE42",
+                                        "val": "0101010"
+                                    },
+                                    {
+                                        "name": "STATE43",
+                                        "val": "0101011"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": 36,
+                        "name": "write_reg_top_inst/write_reg/state[4]",
+                        "state_reg": [
+                            {
+                                "name": "write_reg_top_inst/write_reg/state_reg[4]",
+                                "states": [
+                                    {
+                                        "name": "STATE00",
+                                        "val": "0000000"
+                                    },
+                                    {
+                                        "name": "STATE01",
+                                        "val": "0000001"
+                                    },
+                                    {
+                                        "name": "STATE02",
+                                        "val": "0000010"
+                                    },
+                                    {
+                                        "name": "STATE03",
+                                        "val": "0000011"
+                                    },
+                                    {
+                                        "name": "STATE04",
+                                        "val": "0000100"
+                                    },
+                                    {
+                                        "name": "STATE05",
+                                        "val": "0000101"
+                                    },
+                                    {
+                                        "name": "STATE06",
+                                        "val": "0000110"
+                                    },
+                                    {
+                                        "name": "STATE07",
+                                        "val": "0000111"
+                                    },
+                                    {
+                                        "name": "STATE08",
+                                        "val": "0001000"
+                                    },
+                                    {
+                                        "name": "STATE09",
+                                        "val": "0001001"
+                                    },
+                                    {
+                                        "name": "STATE10",
+                                        "val": "0001010"
+                                    },
+                                    {
+                                        "name": "STATE11",
+                                        "val": "0001011"
+                                    },
+                                    {
+                                        "name": "STATE12",
+                                        "val": "0001100"
+                                    },
+                                    {
+                                        "name": "STATE13",
+                                        "val": "0001101"
+                                    },
+                                    {
+                                        "name": "STATE14",
+                                        "val": "0001110"
+                                    },
+                                    {
+                                        "name": "STATE15",
+                                        "val": "0001111"
+                                    },
+                                    {
+                                        "name": "STATE16",
+                                        "val": "0010000"
+                                    },
+                                    {
+                                        "name": "STATE17",
+                                        "val": "0010001"
+                                    },
+                                    {
+                                        "name": "STATE18",
+                                        "val": "0010010"
+                                    },
+                                    {
+                                        "name": "STATE19",
+                                        "val": "0010011"
+                                    },
+                                    {
+                                        "name": "STATE20",
+                                        "val": "0010100"
+                                    },
+                                    {
+                                        "name": "STATE21",
+                                        "val": "0010101"
+                                    },
+                                    {
+                                        "name": "STATE22",
+                                        "val": "0010110"
+                                    },
+                                    {
+                                        "name": "STATE23",
+                                        "val": "0010111"
+                                    },
+                                    {
+                                        "name": "STATE24",
+                                        "val": "0011000"
+                                    },
+                                    {
+                                        "name": "STATE25",
+                                        "val": "0011001"
+                                    },
+                                    {
+                                        "name": "STATE26",
+                                        "val": "0011010"
+                                    },
+                                    {
+                                        "name": "STATE27",
+                                        "val": "0011011"
+                                    },
+                                    {
+                                        "name": "STATE28",
+                                        "val": "0011100"
+                                    },
+                                    {
+                                        "name": "STATE29",
+                                        "val": "0011101"
+                                    },
+                                    {
+                                        "name": "STATE30",
+                                        "val": "0011110"
+                                    },
+                                    {
+                                        "name": "STATE31",
+                                        "val": "0011111"
+                                    },
+                                    {
+                                        "name": "STATE32",
+                                        "val": "0100000"
+                                    },
+                                    {
+                                        "name": "STATE33",
+                                        "val": "0100001"
+                                    },
+                                    {
+                                        "name": "STATE34",
+                                        "val": "0100010"
+                                    },
+                                    {
+                                        "name": "STATE35",
+                                        "val": "0100011"
+                                    },
+                                    {
+                                        "name": "STATE36",
+                                        "val": "0100100"
+                                    },
+                                    {
+                                        "name": "STATE37",
+                                        "val": "0100101"
+                                    },
+                                    {
+                                        "name": "STATE38",
+                                        "val": "0100110"
+                                    },
+                                    {
+                                        "name": "STATE39",
+                                        "val": "0100111"
+                                    },
+                                    {
+                                        "name": "STATE40",
+                                        "val": "0101000"
+                                    },
+                                    {
+                                        "name": "STATE41",
+                                        "val": "0101001"
+                                    },
+                                    {
+                                        "name": "STATE42",
+                                        "val": "0101010"
+                                    },
+                                    {
+                                        "name": "STATE43",
+                                        "val": "0101011"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": 37,
+                        "name": "write_reg_top_inst/write_reg/state[3]",
+                        "state_reg": [
+                            {
+                                "name": "write_reg_top_inst/write_reg/state_reg[3]",
+                                "states": [
+                                    {
+                                        "name": "STATE00",
+                                        "val": "0000000"
+                                    },
+                                    {
+                                        "name": "STATE01",
+                                        "val": "0000001"
+                                    },
+                                    {
+                                        "name": "STATE02",
+                                        "val": "0000010"
+                                    },
+                                    {
+                                        "name": "STATE03",
+                                        "val": "0000011"
+                                    },
+                                    {
+                                        "name": "STATE04",
+                                        "val": "0000100"
+                                    },
+                                    {
+                                        "name": "STATE05",
+                                        "val": "0000101"
+                                    },
+                                    {
+                                        "name": "STATE06",
+                                        "val": "0000110"
+                                    },
+                                    {
+                                        "name": "STATE07",
+                                        "val": "0000111"
+                                    },
+                                    {
+                                        "name": "STATE08",
+                                        "val": "0001000"
+                                    },
+                                    {
+                                        "name": "STATE09",
+                                        "val": "0001001"
+                                    },
+                                    {
+                                        "name": "STATE10",
+                                        "val": "0001010"
+                                    },
+                                    {
+                                        "name": "STATE11",
+                                        "val": "0001011"
+                                    },
+                                    {
+                                        "name": "STATE12",
+                                        "val": "0001100"
+                                    },
+                                    {
+                                        "name": "STATE13",
+                                        "val": "0001101"
+                                    },
+                                    {
+                                        "name": "STATE14",
+                                        "val": "0001110"
+                                    },
+                                    {
+                                        "name": "STATE15",
+                                        "val": "0001111"
+                                    },
+                                    {
+                                        "name": "STATE16",
+                                        "val": "0010000"
+                                    },
+                                    {
+                                        "name": "STATE17",
+                                        "val": "0010001"
+                                    },
+                                    {
+                                        "name": "STATE18",
+                                        "val": "0010010"
+                                    },
+                                    {
+                                        "name": "STATE19",
+                                        "val": "0010011"
+                                    },
+                                    {
+                                        "name": "STATE20",
+                                        "val": "0010100"
+                                    },
+                                    {
+                                        "name": "STATE21",
+                                        "val": "0010101"
+                                    },
+                                    {
+                                        "name": "STATE22",
+                                        "val": "0010110"
+                                    },
+                                    {
+                                        "name": "STATE23",
+                                        "val": "0010111"
+                                    },
+                                    {
+                                        "name": "STATE24",
+                                        "val": "0011000"
+                                    },
+                                    {
+                                        "name": "STATE25",
+                                        "val": "0011001"
+                                    },
+                                    {
+                                        "name": "STATE26",
+                                        "val": "0011010"
+                                    },
+                                    {
+                                        "name": "STATE27",
+                                        "val": "0011011"
+                                    },
+                                    {
+                                        "name": "STATE28",
+                                        "val": "0011100"
+                                    },
+                                    {
+                                        "name": "STATE29",
+                                        "val": "0011101"
+                                    },
+                                    {
+                                        "name": "STATE30",
+                                        "val": "0011110"
+                                    },
+                                    {
+                                        "name": "STATE31",
+                                        "val": "0011111"
+                                    },
+                                    {
+                                        "name": "STATE32",
+                                        "val": "0100000"
+                                    },
+                                    {
+                                        "name": "STATE33",
+                                        "val": "0100001"
+                                    },
+                                    {
+                                        "name": "STATE34",
+                                        "val": "0100010"
+                                    },
+                                    {
+                                        "name": "STATE35",
+                                        "val": "0100011"
+                                    },
+                                    {
+                                        "name": "STATE36",
+                                        "val": "0100100"
+                                    },
+                                    {
+                                        "name": "STATE37",
+                                        "val": "0100101"
+                                    },
+                                    {
+                                        "name": "STATE38",
+                                        "val": "0100110"
+                                    },
+                                    {
+                                        "name": "STATE39",
+                                        "val": "0100111"
+                                    },
+                                    {
+                                        "name": "STATE40",
+                                        "val": "0101000"
+                                    },
+                                    {
+                                        "name": "STATE41",
+                                        "val": "0101001"
+                                    },
+                                    {
+                                        "name": "STATE42",
+                                        "val": "0101010"
+                                    },
+                                    {
+                                        "name": "STATE43",
+                                        "val": "0101011"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": 38,
+                        "name": "write_reg_top_inst/write_reg/state[2]",
+                        "state_reg": [
+                            {
+                                "name": "write_reg_top_inst/write_reg/state_reg[2]",
+                                "states": [
+                                    {
+                                        "name": "STATE00",
+                                        "val": "0000000"
+                                    },
+                                    {
+                                        "name": "STATE01",
+                                        "val": "0000001"
+                                    },
+                                    {
+                                        "name": "STATE02",
+                                        "val": "0000010"
+                                    },
+                                    {
+                                        "name": "STATE03",
+                                        "val": "0000011"
+                                    },
+                                    {
+                                        "name": "STATE04",
+                                        "val": "0000100"
+                                    },
+                                    {
+                                        "name": "STATE05",
+                                        "val": "0000101"
+                                    },
+                                    {
+                                        "name": "STATE06",
+                                        "val": "0000110"
+                                    },
+                                    {
+                                        "name": "STATE07",
+                                        "val": "0000111"
+                                    },
+                                    {
+                                        "name": "STATE08",
+                                        "val": "0001000"
+                                    },
+                                    {
+                                        "name": "STATE09",
+                                        "val": "0001001"
+                                    },
+                                    {
+                                        "name": "STATE10",
+                                        "val": "0001010"
+                                    },
+                                    {
+                                        "name": "STATE11",
+                                        "val": "0001011"
+                                    },
+                                    {
+                                        "name": "STATE12",
+                                        "val": "0001100"
+                                    },
+                                    {
+                                        "name": "STATE13",
+                                        "val": "0001101"
+                                    },
+                                    {
+                                        "name": "STATE14",
+                                        "val": "0001110"
+                                    },
+                                    {
+                                        "name": "STATE15",
+                                        "val": "0001111"
+                                    },
+                                    {
+                                        "name": "STATE16",
+                                        "val": "0010000"
+                                    },
+                                    {
+                                        "name": "STATE17",
+                                        "val": "0010001"
+                                    },
+                                    {
+                                        "name": "STATE18",
+                                        "val": "0010010"
+                                    },
+                                    {
+                                        "name": "STATE19",
+                                        "val": "0010011"
+                                    },
+                                    {
+                                        "name": "STATE20",
+                                        "val": "0010100"
+                                    },
+                                    {
+                                        "name": "STATE21",
+                                        "val": "0010101"
+                                    },
+                                    {
+                                        "name": "STATE22",
+                                        "val": "0010110"
+                                    },
+                                    {
+                                        "name": "STATE23",
+                                        "val": "0010111"
+                                    },
+                                    {
+                                        "name": "STATE24",
+                                        "val": "0011000"
+                                    },
+                                    {
+                                        "name": "STATE25",
+                                        "val": "0011001"
+                                    },
+                                    {
+                                        "name": "STATE26",
+                                        "val": "0011010"
+                                    },
+                                    {
+                                        "name": "STATE27",
+                                        "val": "0011011"
+                                    },
+                                    {
+                                        "name": "STATE28",
+                                        "val": "0011100"
+                                    },
+                                    {
+                                        "name": "STATE29",
+                                        "val": "0011101"
+                                    },
+                                    {
+                                        "name": "STATE30",
+                                        "val": "0011110"
+                                    },
+                                    {
+                                        "name": "STATE31",
+                                        "val": "0011111"
+                                    },
+                                    {
+                                        "name": "STATE32",
+                                        "val": "0100000"
+                                    },
+                                    {
+                                        "name": "STATE33",
+                                        "val": "0100001"
+                                    },
+                                    {
+                                        "name": "STATE34",
+                                        "val": "0100010"
+                                    },
+                                    {
+                                        "name": "STATE35",
+                                        "val": "0100011"
+                                    },
+                                    {
+                                        "name": "STATE36",
+                                        "val": "0100100"
+                                    },
+                                    {
+                                        "name": "STATE37",
+                                        "val": "0100101"
+                                    },
+                                    {
+                                        "name": "STATE38",
+                                        "val": "0100110"
+                                    },
+                                    {
+                                        "name": "STATE39",
+                                        "val": "0100111"
+                                    },
+                                    {
+                                        "name": "STATE40",
+                                        "val": "0101000"
+                                    },
+                                    {
+                                        "name": "STATE41",
+                                        "val": "0101001"
+                                    },
+                                    {
+                                        "name": "STATE42",
+                                        "val": "0101010"
+                                    },
+                                    {
+                                        "name": "STATE43",
+                                        "val": "0101011"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": 39,
+                        "name": "write_reg_top_inst/write_reg/state[1]",
+                        "state_reg": [
+                            {
+                                "name": "write_reg_top_inst/write_reg/state_reg[1]",
+                                "states": [
+                                    {
+                                        "name": "STATE00",
+                                        "val": "0000000"
+                                    },
+                                    {
+                                        "name": "STATE01",
+                                        "val": "0000001"
+                                    },
+                                    {
+                                        "name": "STATE02",
+                                        "val": "0000010"
+                                    },
+                                    {
+                                        "name": "STATE03",
+                                        "val": "0000011"
+                                    },
+                                    {
+                                        "name": "STATE04",
+                                        "val": "0000100"
+                                    },
+                                    {
+                                        "name": "STATE05",
+                                        "val": "0000101"
+                                    },
+                                    {
+                                        "name": "STATE06",
+                                        "val": "0000110"
+                                    },
+                                    {
+                                        "name": "STATE07",
+                                        "val": "0000111"
+                                    },
+                                    {
+                                        "name": "STATE08",
+                                        "val": "0001000"
+                                    },
+                                    {
+                                        "name": "STATE09",
+                                        "val": "0001001"
+                                    },
+                                    {
+                                        "name": "STATE10",
+                                        "val": "0001010"
+                                    },
+                                    {
+                                        "name": "STATE11",
+                                        "val": "0001011"
+                                    },
+                                    {
+                                        "name": "STATE12",
+                                        "val": "0001100"
+                                    },
+                                    {
+                                        "name": "STATE13",
+                                        "val": "0001101"
+                                    },
+                                    {
+                                        "name": "STATE14",
+                                        "val": "0001110"
+                                    },
+                                    {
+                                        "name": "STATE15",
+                                        "val": "0001111"
+                                    },
+                                    {
+                                        "name": "STATE16",
+                                        "val": "0010000"
+                                    },
+                                    {
+                                        "name": "STATE17",
+                                        "val": "0010001"
+                                    },
+                                    {
+                                        "name": "STATE18",
+                                        "val": "0010010"
+                                    },
+                                    {
+                                        "name": "STATE19",
+                                        "val": "0010011"
+                                    },
+                                    {
+                                        "name": "STATE20",
+                                        "val": "0010100"
+                                    },
+                                    {
+                                        "name": "STATE21",
+                                        "val": "0010101"
+                                    },
+                                    {
+                                        "name": "STATE22",
+                                        "val": "0010110"
+                                    },
+                                    {
+                                        "name": "STATE23",
+                                        "val": "0010111"
+                                    },
+                                    {
+                                        "name": "STATE24",
+                                        "val": "0011000"
+                                    },
+                                    {
+                                        "name": "STATE25",
+                                        "val": "0011001"
+                                    },
+                                    {
+                                        "name": "STATE26",
+                                        "val": "0011010"
+                                    },
+                                    {
+                                        "name": "STATE27",
+                                        "val": "0011011"
+                                    },
+                                    {
+                                        "name": "STATE28",
+                                        "val": "0011100"
+                                    },
+                                    {
+                                        "name": "STATE29",
+                                        "val": "0011101"
+                                    },
+                                    {
+                                        "name": "STATE30",
+                                        "val": "0011110"
+                                    },
+                                    {
+                                        "name": "STATE31",
+                                        "val": "0011111"
+                                    },
+                                    {
+                                        "name": "STATE32",
+                                        "val": "0100000"
+                                    },
+                                    {
+                                        "name": "STATE33",
+                                        "val": "0100001"
+                                    },
+                                    {
+                                        "name": "STATE34",
+                                        "val": "0100010"
+                                    },
+                                    {
+                                        "name": "STATE35",
+                                        "val": "0100011"
+                                    },
+                                    {
+                                        "name": "STATE36",
+                                        "val": "0100100"
+                                    },
+                                    {
+                                        "name": "STATE37",
+                                        "val": "0100101"
+                                    },
+                                    {
+                                        "name": "STATE38",
+                                        "val": "0100110"
+                                    },
+                                    {
+                                        "name": "STATE39",
+                                        "val": "0100111"
+                                    },
+                                    {
+                                        "name": "STATE40",
+                                        "val": "0101000"
+                                    },
+                                    {
+                                        "name": "STATE41",
+                                        "val": "0101001"
+                                    },
+                                    {
+                                        "name": "STATE42",
+                                        "val": "0101010"
+                                    },
+                                    {
+                                        "name": "STATE43",
+                                        "val": "0101011"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": 40,
+                        "name": "write_reg_top_inst/write_reg/state[0]",
+                        "state_reg": [
+                            {
+                                "name": "write_reg_top_inst/write_reg/state_reg[0]",
+                                "states": [
+                                    {
+                                        "name": "STATE00",
+                                        "val": "0000000"
+                                    },
+                                    {
+                                        "name": "STATE01",
+                                        "val": "0000001"
+                                    },
+                                    {
+                                        "name": "STATE02",
+                                        "val": "0000010"
+                                    },
+                                    {
+                                        "name": "STATE03",
+                                        "val": "0000011"
+                                    },
+                                    {
+                                        "name": "STATE04",
+                                        "val": "0000100"
+                                    },
+                                    {
+                                        "name": "STATE05",
+                                        "val": "0000101"
+                                    },
+                                    {
+                                        "name": "STATE06",
+                                        "val": "0000110"
+                                    },
+                                    {
+                                        "name": "STATE07",
+                                        "val": "0000111"
+                                    },
+                                    {
+                                        "name": "STATE08",
+                                        "val": "0001000"
+                                    },
+                                    {
+                                        "name": "STATE09",
+                                        "val": "0001001"
+                                    },
+                                    {
+                                        "name": "STATE10",
+                                        "val": "0001010"
+                                    },
+                                    {
+                                        "name": "STATE11",
+                                        "val": "0001011"
+                                    },
+                                    {
+                                        "name": "STATE12",
+                                        "val": "0001100"
+                                    },
+                                    {
+                                        "name": "STATE13",
+                                        "val": "0001101"
+                                    },
+                                    {
+                                        "name": "STATE14",
+                                        "val": "0001110"
+                                    },
+                                    {
+                                        "name": "STATE15",
+                                        "val": "0001111"
+                                    },
+                                    {
+                                        "name": "STATE16",
+                                        "val": "0010000"
+                                    },
+                                    {
+                                        "name": "STATE17",
+                                        "val": "0010001"
+                                    },
+                                    {
+                                        "name": "STATE18",
+                                        "val": "0010010"
+                                    },
+                                    {
+                                        "name": "STATE19",
+                                        "val": "0010011"
+                                    },
+                                    {
+                                        "name": "STATE20",
+                                        "val": "0010100"
+                                    },
+                                    {
+                                        "name": "STATE21",
+                                        "val": "0010101"
+                                    },
+                                    {
+                                        "name": "STATE22",
+                                        "val": "0010110"
+                                    },
+                                    {
+                                        "name": "STATE23",
+                                        "val": "0010111"
+                                    },
+                                    {
+                                        "name": "STATE24",
+                                        "val": "0011000"
+                                    },
+                                    {
+                                        "name": "STATE25",
+                                        "val": "0011001"
+                                    },
+                                    {
+                                        "name": "STATE26",
+                                        "val": "0011010"
+                                    },
+                                    {
+                                        "name": "STATE27",
+                                        "val": "0011011"
+                                    },
+                                    {
+                                        "name": "STATE28",
+                                        "val": "0011100"
+                                    },
+                                    {
+                                        "name": "STATE29",
+                                        "val": "0011101"
+                                    },
+                                    {
+                                        "name": "STATE30",
+                                        "val": "0011110"
+                                    },
+                                    {
+                                        "name": "STATE31",
+                                        "val": "0011111"
+                                    },
+                                    {
+                                        "name": "STATE32",
+                                        "val": "0100000"
+                                    },
+                                    {
+                                        "name": "STATE33",
+                                        "val": "0100001"
+                                    },
+                                    {
+                                        "name": "STATE34",
+                                        "val": "0100010"
+                                    },
+                                    {
+                                        "name": "STATE35",
+                                        "val": "0100011"
+                                    },
+                                    {
+                                        "name": "STATE36",
+                                        "val": "0100100"
+                                    },
+                                    {
+                                        "name": "STATE37",
+                                        "val": "0100101"
+                                    },
+                                    {
+                                        "name": "STATE38",
+                                        "val": "0100110"
+                                    },
+                                    {
+                                        "name": "STATE39",
+                                        "val": "0100111"
+                                    },
+                                    {
+                                        "name": "STATE40",
+                                        "val": "0101000"
+                                    },
+                                    {
+                                        "name": "STATE41",
+                                        "val": "0101001"
+                                    },
+                                    {
+                                        "name": "STATE42",
+                                        "val": "0101010"
+                                    },
+                                    {
+                                        "name": "STATE43",
+                                        "val": "0101011"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

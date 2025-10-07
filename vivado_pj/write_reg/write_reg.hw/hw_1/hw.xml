@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Product Version: Vivado v2022.2 (64-bit)                     -->
+<!--                                                              -->
+<!-- Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.        -->
+
+<hwsession version="1" minor="2">
+  <device name="xc7a35t_0" gui_info="dashboard1=hw_ila_1[xc7a35t_0/hw_ila_1/Settings=ILA_SETTINGS_1;xc7a35t_0/hw_ila_1/Status=ILA_STATUS_1;xc7a35t_0/hw_ila_1/Trigger Setup=ILA_TRIGGER_1;xc7a35t_0/hw_ila_1/Waveform=ILA_WAVE_1;xc7a35t_0/hw_ila_1/Capture Setup=ILA_CAPTURE_1;]"/>
+  <ObjectList object_type="hw_device" gui_info="">
+    <Object name="xc7a35t_0" gui_info="">
+      <Properties Property="FULL_PROBES.FILE" value="$_project_name_.runs/impl_1/top.ltx"/>
+      <Properties Property="PROBES.FILE" value="$_project_name_.runs/impl_1/top.ltx"/>
+      <Properties Property="PROGRAM.HW_BITSTREAM" value="$_project_name_.runs/impl_1/top.bit"/>
+      <Properties Property="SLR.COUNT" value="1"/>
+    </Object>
+  </ObjectList>
+  <ObjectList object_type="hw_ila" gui_info="">
+    <Object name="" gui_info="">
+      <Properties Property="CONTROL.TRIGGER_CONDITION" value="AND"/>
+      <Properties Property="CORE_REFRESH_RATE_MS" value="500"/>
+    </Object>
+    <Object name="write_reg_top_inst/write_reg/ila_0_inst" gui_info="">
+      <Properties Property="CONTROL.TRIGGER_CONDITION" value="AND"/>
+      <Properties Property="CORE_REFRESH_RATE_MS" value="500"/>
+    </Object>
+  </ObjectList>
+  <ObjectList object_type="hw_probe" gui_info="">
+    <Object name="write_reg_top_inst/write_reg/start" gui_info="Trigger Setup=0"/>
+  </ObjectList>
+  <probeset name="hw project" active="false">
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe2[0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="write_reg_top_inst/write_reg/flag_addr_cnt"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe1[31:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="write_reg_top_inst/write_reg/frameaddr[31]"/>
+        <net name="write_reg_top_inst/write_reg/frameaddr[30]"/>
+        <net name="write_reg_top_inst/write_reg/frameaddr[29]"/>
+        <net name="write_reg_top_inst/write_reg/frameaddr[28]"/>
+        <net name="write_reg_top_inst/write_reg/frameaddr[27]"/>
+        <net name="write_reg_top_inst/write_reg/frameaddr[26]"/>
+        <net name="write_reg_top_inst/write_reg/frameaddr[25]"/>
+        <net name="write_reg_top_inst/write_reg/frameaddr[24]"/>
+        <net name="write_reg_top_inst/write_reg/frameaddr[23]"/>
+        <net name="write_reg_top_inst/write_reg/frameaddr[22]"/>
+        <net name="write_reg_top_inst/write_reg/frameaddr[21]"/>
+        <net name="write_reg_top_inst/write_reg/frameaddr[20]"/>
+        <net name="write_reg_top_inst/write_reg/frameaddr[19]"/>
+        <net name="write_reg_top_inst/write_reg/frameaddr[18]"/>
+        <net name="write_reg_top_inst/write_reg/frameaddr[17]"/>
+        <net name="write_reg_top_inst/write_reg/frameaddr[16]"/>
+        <net name="write_reg_top_inst/write_reg/frameaddr[15]"/>
+        <net name="write_reg_top_inst/write_reg/frameaddr[14]"/>
+        <net name="write_reg_top_inst/write_reg/frameaddr[13]"/>
+        <net name="write_reg_top_inst/write_reg/frameaddr[12]"/>
+        <net name="write_reg_top_inst/write_reg/frameaddr[11]"/>
+        <net name="write_reg_top_inst/write_reg/frameaddr[10]"/>
+        <net name="write_reg_top_inst/write_reg/frameaddr[9]"/>
+        <net name="write_reg_top_inst/write_reg/frameaddr[8]"/>
+        <net name="write_reg_top_inst/write_reg/frameaddr[7]"/>
+        <net name="write_reg_top_inst/write_reg/frameaddr[6]"/>
+        <net name="write_reg_top_inst/write_reg/frameaddr[5]"/>
+        <net name="write_reg_top_inst/write_reg/frameaddr[4]"/>
+        <net name="write_reg_top_inst/write_reg/frameaddr[3]"/>
+        <net name="write_reg_top_inst/write_reg/frameaddr[2]"/>
+        <net name="write_reg_top_inst/write_reg/frameaddr[1]"/>
+        <net name="write_reg_top_inst/write_reg/frameaddr[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe4[31:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="write_reg_top_inst/write_reg/icap_i_real[31]"/>
+        <net name="write_reg_top_inst/write_reg/icap_i_real[30]"/>
+        <net name="write_reg_top_inst/write_reg/icap_i_real[29]"/>
+        <net name="write_reg_top_inst/write_reg/icap_i_real[28]"/>
+        <net name="write_reg_top_inst/write_reg/icap_i_real[27]"/>
+        <net name="write_reg_top_inst/write_reg/icap_i_real[26]"/>
+        <net name="write_reg_top_inst/write_reg/icap_i_real[25]"/>
+        <net name="write_reg_top_inst/write_reg/icap_i_real[24]"/>
+        <net name="write_reg_top_inst/write_reg/icap_i_real[23]"/>
+        <net name="write_reg_top_inst/write_reg/icap_i_real[22]"/>
+        <net name="write_reg_top_inst/write_reg/icap_i_real[21]"/>
+        <net name="write_reg_top_inst/write_reg/icap_i_real[20]"/>
+        <net name="write_reg_top_inst/write_reg/icap_i_real[19]"/>
+        <net name="write_reg_top_inst/write_reg/icap_i_real[18]"/>
+        <net name="write_reg_top_inst/write_reg/icap_i_real[17]"/>
+        <net name="write_reg_top_inst/write_reg/icap_i_real[16]"/>
+        <net name="write_reg_top_inst/write_reg/icap_i_real[15]"/>
+        <net name="write_reg_top_inst/write_reg/icap_i_real[14]"/>
+        <net name="write_reg_top_inst/write_reg/icap_i_real[13]"/>
+        <net name="write_reg_top_inst/write_reg/icap_i_real[12]"/>
+        <net name="write_reg_top_inst/write_reg/icap_i_real[11]"/>
+        <net name="write_reg_top_inst/write_reg/icap_i_real[10]"/>
+        <net name="write_reg_top_inst/write_reg/icap_i_real[9]"/>
+        <net name="write_reg_top_inst/write_reg/icap_i_real[8]"/>
+        <net name="write_reg_top_inst/write_reg/icap_i_real[7]"/>
+        <net name="write_reg_top_inst/write_reg/icap_i_real[6]"/>
+        <net name="write_reg_top_inst/write_reg/icap_i_real[5]"/>
+        <net name="write_reg_top_inst/write_reg/icap_i_real[4]"/>
+        <net name="write_reg_top_inst/write_reg/icap_i_real[3]"/>
+        <net name="write_reg_top_inst/write_reg/icap_i_real[2]"/>
+        <net name="write_reg_top_inst/write_reg/icap_i_real[1]"/>
+        <net name="write_reg_top_inst/write_reg/icap_i_real[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;b1"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe0[0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;b1"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="write_reg_top_inst/write_reg/start"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq7&apos;hXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq7&apos;hXX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe3[6:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq7&apos;hXX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+        <Option Id="ENUM.STATE00" value="eq7&apos;b0000000"/>
+        <Option Id="ENUM.STATE01" value="eq7&apos;b0000001"/>
+        <Option Id="ENUM.STATE02" value="eq7&apos;b0000010"/>
+        <Option Id="ENUM.STATE03" value="eq7&apos;b0000011"/>
+        <Option Id="ENUM.STATE04" value="eq7&apos;b0000100"/>
+        <Option Id="ENUM.STATE05" value="eq7&apos;b0000101"/>
+        <Option Id="ENUM.STATE06" value="eq7&apos;b0000110"/>
+        <Option Id="ENUM.STATE07" value="eq7&apos;b0000111"/>
+        <Option Id="ENUM.STATE08" value="eq7&apos;b0001000"/>
+        <Option Id="ENUM.STATE09" value="eq7&apos;b0001001"/>
+        <Option Id="ENUM.STATE10" value="eq7&apos;b0001010"/>
+        <Option Id="ENUM.STATE11" value="eq7&apos;b0001011"/>
+        <Option Id="ENUM.STATE12" value="eq7&apos;b0001100"/>
+        <Option Id="ENUM.STATE13" value="eq7&apos;b0001101"/>
+        <Option Id="ENUM.STATE14" value="eq7&apos;b0001110"/>
+        <Option Id="ENUM.STATE15" value="eq7&apos;b0001111"/>
+        <Option Id="ENUM.STATE16" value="eq7&apos;b0010000"/>
+        <Option Id="ENUM.STATE17" value="eq7&apos;b0010001"/>
+        <Option Id="ENUM.STATE18" value="eq7&apos;b0010010"/>
+        <Option Id="ENUM.STATE19" value="eq7&apos;b0010011"/>
+        <Option Id="ENUM.STATE20" value="eq7&apos;b0010100"/>
+        <Option Id="ENUM.STATE21" value="eq7&apos;b0010101"/>
+        <Option Id="ENUM.STATE22" value="eq7&apos;b0010110"/>
+        <Option Id="ENUM.STATE23" value="eq7&apos;b0010111"/>
+        <Option Id="ENUM.STATE24" value="eq7&apos;b0011000"/>
+        <Option Id="ENUM.STATE25" value="eq7&apos;b0011001"/>
+        <Option Id="ENUM.STATE26" value="eq7&apos;b0011010"/>
+        <Option Id="ENUM.STATE27" value="eq7&apos;b0011011"/>
+        <Option Id="ENUM.STATE28" value="eq7&apos;b0011100"/>
+        <Option Id="ENUM.STATE29" value="eq7&apos;b0011101"/>
+        <Option Id="ENUM.STATE30" value="eq7&apos;b0011110"/>
+        <Option Id="ENUM.STATE31" value="eq7&apos;b0011111"/>
+        <Option Id="ENUM.STATE32" value="eq7&apos;b0100000"/>
+        <Option Id="ENUM.STATE33" value="eq7&apos;b0100001"/>
+        <Option Id="ENUM.STATE34" value="eq7&apos;b0100010"/>
+        <Option Id="ENUM.STATE35" value="eq7&apos;b0100011"/>
+        <Option Id="ENUM.STATE36" value="eq7&apos;b0100100"/>
+        <Option Id="ENUM.STATE37" value="eq7&apos;b0100101"/>
+        <Option Id="ENUM.STATE38" value="eq7&apos;b0100110"/>
+        <Option Id="ENUM.STATE39" value="eq7&apos;b0100111"/>
+        <Option Id="ENUM.STATE40" value="eq7&apos;b0101000"/>
+        <Option Id="ENUM.STATE41" value="eq7&apos;b0101001"/>
+        <Option Id="ENUM.STATE42" value="eq7&apos;b0101010"/>
+        <Option Id="ENUM.STATE43" value="eq7&apos;b0101011"/>
+      </probeOptions>
+      <nets>
+        <net name="write_reg_top_inst/write_reg/state[6]"/>
+        <net name="write_reg_top_inst/write_reg/state[5]"/>
+        <net name="write_reg_top_inst/write_reg/state[4]"/>
+        <net name="write_reg_top_inst/write_reg/state[3]"/>
+        <net name="write_reg_top_inst/write_reg/state[2]"/>
+        <net name="write_reg_top_inst/write_reg/state[1]"/>
+        <net name="write_reg_top_inst/write_reg/state[0]"/>
+      </nets>
+    </probe>
+  </probeset>
+</hwsession>

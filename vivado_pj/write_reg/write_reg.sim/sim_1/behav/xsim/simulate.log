@@ -1,0 +1,5 @@
+Time resolution is 1 ps
+ Warning : ICAPE2 on instance write_reg_top_tb.write_reg_top_inst.write_reg.ICAPE2_inst at time               150000 has not finished initialization. A message will be printed after the initialization. User need start read/write operation after that.
+ Warning : ICAPE2 on instance write_reg_top_tb.write_reg_top_inst.write_reg.ICAPE2_inst at time               170000 has not finished initialization. A message will be printed after the initialization. User need start read/write operation after that.
+ Message: ICAPE2 on instance write_reg_top_tb.write_reg_top_inst.write_reg.ICAPE2_inst at time              1254000 has finished initialization. User can start read/write operation.
+INFO: xsimkernel Simulation Memory Usage: 19268 KB (Peak: 19268 KB), Simulation CPU Usage: 73827 ms

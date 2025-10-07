@@ -1,0 +1,9 @@
+0.7
+2020.2
+Oct 14 2022
+05:20:55
+D:/Vivado_project/ICAPE2/write_reg_5/rtl/addr_generater.v,1749652376,verilog,,D:/Vivado_project/ICAPE2/write_reg_5/rtl/write_reg.v,,addr_generater,,,,,,,,
+D:/Vivado_project/ICAPE2/write_reg_5/rtl/write_reg.v,1749653123,verilog,,D:/Vivado_project/ICAPE2/write_reg_5/rtl/write_reg_top.v,,write_reg,,,,,,,,
+D:/Vivado_project/ICAPE2/write_reg_5/rtl/write_reg_top.v,1749651831,verilog,,D:/Vivado_project/ICAPE2/write_reg_5/sim/write_reg_top_tb.v,,write_reg_top,,,,,,,,
+D:/Vivado_project/ICAPE2/write_reg_5/sim/write_reg_top_tb.v,1749652172,verilog,,,,write_reg_top_tb,,,,,,,,
+D:/Vivado_project/ICAPE2/write_reg_5/vivado_pj/write_reg/write_reg.sim/sim_1/behav/xsim/glbl.v,1665704903,verilog,,,,glbl,,,,,,,,

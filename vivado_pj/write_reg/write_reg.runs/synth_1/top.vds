@@ -1,0 +1,343 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Thu Jun 12 17:59:07 2025
+# Process ID: 27468
+# Current directory: D:/Vivado_project/ICAPE2/write_reg_5/vivado_pj/write_reg/write_reg.runs/synth_1
+# Command line: vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+# Log file: D:/Vivado_project/ICAPE2/write_reg_5/vivado_pj/write_reg/write_reg.runs/synth_1/top.vds
+# Journal file: D:/Vivado_project/ICAPE2/write_reg_5/vivado_pj/write_reg/write_reg.runs/synth_1\vivado.jou
+# Running On: LAPTOP-LPVALG78, OS: Windows, CPU Frequency: 2419 MHz, CPU Physical cores: 16, Host memory: 34124 MB
+#-----------------------------------------------------------
+source top.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental D:/Vivado_project/ICAPE2/write_reg_5/vivado_pj/write_reg/write_reg.srcs/utils_1/imports/synth_1/top.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from D:/Vivado_project/ICAPE2/write_reg_5/vivado_pj/write_reg/write_reg.srcs/utils_1/imports/synth_1/top.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top top -part xc7a35tfgg484-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tfgg484-2
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 2916
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [D:/Vitis/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1842.836 ; gain = 409.570
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [D:/Vivado_project/ICAPE2/write_reg_5/rtl/top.v:3]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [D:/Vivado_project/ICAPE2/write_reg_5/rtl/top.v:18]
+INFO: [Synth 8-6157] synthesizing module 'write_reg_top' [D:/Vivado_project/ICAPE2/write_reg_5/rtl/write_reg_top.v:3]
+INFO: [Synth 8-6157] synthesizing module 'addr_generater' [D:/Vivado_project/ICAPE2/write_reg_5/rtl/addr_generater.v:5]
+INFO: [Synth 8-6157] synthesizing module 'key_filter' [D:/Vivado_project/ICAPE2/write_reg_5/rtl/key_filter.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'key_filter' (0#1) [D:/Vivado_project/ICAPE2/write_reg_5/rtl/key_filter.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'addr_generater' (0#1) [D:/Vivado_project/ICAPE2/write_reg_5/rtl/addr_generater.v:5]
+INFO: [Synth 8-6157] synthesizing module 'write_reg' [D:/Vivado_project/ICAPE2/write_reg_5/rtl/write_reg.v:4]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Vivado_project/ICAPE2/write_reg_5/rtl/write_reg.v:108]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Vivado_project/ICAPE2/write_reg_5/rtl/write_reg.v:192]
+INFO: [Synth 8-6157] synthesizing module 'ICAPE2' [D:/Vitis/Vivado/2022.2/scripts/rt/data/unisim_comp.v:73173]
+	Parameter DEVICE_ID bound to: 56807571 - type: integer 
+	Parameter ICAP_WIDTH bound to: X32 - type: string 
+	Parameter SIM_CFG_FILE_NAME bound to: NONE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'ICAPE2' (0#1) [D:/Vitis/Vivado/2022.2/scripts/rt/data/unisim_comp.v:73173]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [D:/Vivado_project/ICAPE2/write_reg_5/rtl/write_reg.v:575]
+INFO: [Synth 8-6157] synthesizing module 'ila_0' [D:/Vivado_project/ICAPE2/write_reg_5/vivado_pj/write_reg/write_reg.runs/synth_1/.Xil/Vivado-27468-LAPTOP-LPVALG78/realtime/ila_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'ila_0' (0#1) [D:/Vivado_project/ICAPE2/write_reg_5/vivado_pj/write_reg/write_reg.runs/synth_1/.Xil/Vivado-27468-LAPTOP-LPVALG78/realtime/ila_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'write_reg' (0#1) [D:/Vivado_project/ICAPE2/write_reg_5/rtl/write_reg.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'write_reg_top' (0#1) [D:/Vivado_project/ICAPE2/write_reg_5/rtl/write_reg_top.v:3]
+INFO: [Synth 8-6157] synthesizing module 'hex_top' [D:/Vivado_project/ICAPE2/write_reg_5/rtl/hex_top.v:21]
+INFO: [Synth 8-6157] synthesizing module 'hc595_driver' [D:/Vivado_project/ICAPE2/write_reg_5/rtl/hc595_driver.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'hc595_driver' (0#1) [D:/Vivado_project/ICAPE2/write_reg_5/rtl/hc595_driver.v:21]
+INFO: [Synth 8-6157] synthesizing module 'hex8' [D:/Vivado_project/ICAPE2/write_reg_5/rtl/hex8.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'hex8' (0#1) [D:/Vivado_project/ICAPE2/write_reg_5/rtl/hex8.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'hex_top' (0#1) [D:/Vivado_project/ICAPE2/write_reg_5/rtl/hex_top.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'top' (0#1) [D:/Vivado_project/ICAPE2/write_reg_5/rtl/top.v:3]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'write_reg'. This will prevent further optimization [D:/Vivado_project/ICAPE2/write_reg_5/rtl/write_reg_top.v:26]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ila_0_inst'. This will prevent further optimization [D:/Vivado_project/ICAPE2/write_reg_5/rtl/write_reg.v:575]
+WARNING: [Synth 8-6014] Unused sequential element noop_cnt_reg was removed.  [D:/Vivado_project/ICAPE2/write_reg_5/rtl/write_reg.v:92]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1940.254 ; gain = 506.988
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1958.164 ; gain = 524.898
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1958.164 ; gain = 524.898
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1970.191 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/Vivado_project/ICAPE2/write_reg_5/vivado_pj/write_reg/write_reg.gen/sources_1/ip/ila_0/ila_0/ila_0_in_context.xdc] for cell 'write_reg_top_inst/write_reg/ila_0_inst'
+Finished Parsing XDC File [d:/Vivado_project/ICAPE2/write_reg_5/vivado_pj/write_reg/write_reg.gen/sources_1/ip/ila_0/ila_0/ila_0_in_context.xdc] for cell 'write_reg_top_inst/write_reg/ila_0_inst'
+Parsing XDC File [D:/Vivado_project/ICAPE2/write_reg_5/vivado_pj/write_reg/write_reg.srcs/constrs_1/new/pin.xdc]
+Finished Parsing XDC File [D:/Vivado_project/ICAPE2/write_reg_5/vivado_pj/write_reg/write_reg.srcs/constrs_1/new/pin.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Vivado_project/ICAPE2/write_reg_5/vivado_pj/write_reg/write_reg.srcs/constrs_1/new/pin.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2046.660 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2046.660 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [D:/Vitis/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2046.660 ; gain = 613.395
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tfgg484-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2046.660 ; gain = 613.395
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for write_reg_top_inst/write_reg/ila_0_inst. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2046.660 ; gain = 613.395
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'write_reg'
+INFO: [Synth 8-6159] Found Keep on FSM register 'state_reg' in module 'write_reg', re-encoding will not be performed
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                 STATE00 |                          0000000 |                          0000000
+                 STATE01 |                          0000001 |                          0000001
+                 STATE02 |                          0000010 |                          0000010
+                 STATE03 |                          0000011 |                          0000011
+                 STATE04 |                          0000100 |                          0000100
+                 STATE05 |                          0000101 |                          0000101
+                 STATE06 |                          0000110 |                          0000110
+                 STATE07 |                          0000111 |                          0000111
+                 STATE29 |                          0011101 |                          0011101
+                 STATE30 |                          0011110 |                          0011110
+                 STATE31 |                          0011111 |                          0011111
+                 STATE32 |                          0100000 |                          0100000
+                 STATE33 |                          0100001 |                          0100001
+                 STATE34 |                          0100010 |                          0100010
+                 STATE35 |                          0100011 |                          0100011
+                 STATE36 |                          0100100 |                          0100100
+                 STATE37 |                          0100101 |                          0100101
+                 STATE38 |                          0100110 |                          0100110
+                 STATE39 |                          0100111 |                          0100111
+                 STATE40 |                          0101000 |                          0101000
+                 STATE41 |                          0101001 |                          0101001
+                 STATE42 |                          0101010 |                          0101010
+                 STATE43 |                          0101011 |                          0101011
+---------------------------------------------------------------------------------------------------
+WARNING: [Synth 8-327] inferring latch for variable 'csib_reg' [D:/Vivado_project/ICAPE2/write_reg_5/rtl/write_reg.v:188]
+WARNING: [Synth 8-327] inferring latch for variable 'rdwrb_reg' [D:/Vivado_project/ICAPE2/write_reg_5/rtl/write_reg.v:189]
+WARNING: [Synth 8-327] inferring latch for variable 'icap_i_reg' [D:/Vivado_project/ICAPE2/write_reg_5/rtl/write_reg.v:190]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2046.660 ; gain = 613.395
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 1     
+	   2 Input   20 Bit       Adders := 1     
+	   2 Input   15 Bit       Adders := 1     
+	   2 Input    9 Bit       Adders := 2     
+	   2 Input    8 Bit       Adders := 1     
+	   2 Input    6 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               20 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	               15 Bit    Registers := 1     
+	                9 Bit    Registers := 2     
+	                8 Bit    Registers := 2     
+	                6 Bit    Registers := 1     
+	                1 Bit    Registers := 9     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 2     
+	  45 Input   32 Bit        Muxes := 1     
+	   2 Input   20 Bit        Muxes := 2     
+	   2 Input   15 Bit        Muxes := 2     
+	   2 Input    9 Bit        Muxes := 2     
+	   2 Input    8 Bit        Muxes := 3     
+	  45 Input    7 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 2     
+	   2 Input    5 Bit        Muxes := 1     
+	   9 Input    4 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 8     
+	   3 Input    1 Bit        Muxes := 1     
+	  45 Input    1 Bit        Muxes := 3     
+	  34 Input    1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2046.660 ; gain = 613.395
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++-------------+---------------------------------+---------------+----------------+
+|Module Name  | RTL Object                      | Depth x Width | Implemented As | 
++-------------+---------------------------------+---------------+----------------+
+|hc595_driver | sh_cp                           | 64x1          | LUT            | 
+|hc595_driver | ds                              | 64x1          | LUT            | 
+|top          | hex_top_inst/hc595_driver/sh_cp | 64x1          | LUT            | 
+|top          | hex_top_inst/hc595_driver/ds    | 64x1          | LUT            | 
++-------------+---------------------------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 2046.660 ; gain = 613.395
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 2046.660 ; gain = 613.395
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 2046.660 ; gain = 613.395
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 2046.660 ; gain = 613.395
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 2046.660 ; gain = 613.395
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 2046.660 ; gain = 613.395
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 2046.660 ; gain = 613.395
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 2046.660 ; gain = 613.395
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 2046.660 ; gain = 613.395
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |ila_0         |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |ila    |     1|
+|2     |BUFG   |     2|
+|3     |CARRY4 |    25|
+|4     |ICAPE2 |     1|
+|5     |LUT1   |     6|
+|6     |LUT2   |    32|
+|7     |LUT3   |    41|
+|8     |LUT4   |    25|
+|9     |LUT5   |    74|
+|10    |LUT6   |    60|
+|11    |MUXF7  |     2|
+|12    |FDCE   |   113|
+|13    |FDPE   |     3|
+|14    |FDRE   |    13|
+|15    |LDC    |    32|
+|16    |LDP    |     2|
+|17    |IBUF   |     3|
+|18    |OBUF   |     3|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 2046.660 ; gain = 613.395
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 4 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:10 ; elapsed = 00:00:16 . Memory (MB): peak = 2046.660 ; gain = 524.898
+Synthesis Optimization Complete : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 2046.660 ; gain = 613.395
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2046.660 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 61 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2046.660 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 34 instances were transformed.
+  LDC => LDCE: 32 instances
+  LDP => LDPE: 2 instances
+
+Synth Design complete, checksum: 815a15cf
+INFO: [Common 17-83] Releasing license: Synthesis
+49 Infos, 7 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:21 . Memory (MB): peak = 2046.660 ; gain = 982.125
+INFO: [Common 17-1381] The checkpoint 'D:/Vivado_project/ICAPE2/write_reg_5/vivado_pj/write_reg/write_reg.runs/synth_1/top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Jun 12 17:59:38 2025...
